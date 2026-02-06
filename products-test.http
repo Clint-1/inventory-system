@@ -1,0 +1,37 @@
+# Get all products
+GET http://localhost:3000/api/products
+
+###
+
+# Add a new product
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+  "name": "Keyboard",
+  "stock": 20,
+  "price": 1200
+}
+
+###
+
+# Update a product
+PUT http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Laptop",
+  "stock": 15,
+  "price": 48000
+}
+
+###
+
+# Delete a product
+DELETE http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+  "id": 1
+}
